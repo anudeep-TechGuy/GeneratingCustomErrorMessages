@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var minValue = parseInt(prompt("Enter the minimum Value"));
+        var maxValue = parseInt(prompt("Enter the Maximum Value"));
+        function randomGen(lower, higher) {
+            if (isNaN(lower) || isNaN(higher)) {
+                throw new Error("Please pass numbers in the arguments only");
+            }
+            var rand = Math.floor(Math.random() * (higher - lower + 1) + lower);
+            console.log(rand);
+        }
+        randomGen(minValue, maxValue);
+        randomGen(minValue, maxValue);
+        randomGen(minValue, maxValue);
+        randomGen(minValue, maxValue);
+        randomGen(minValue, maxValue);
+    </script>
+</body>
+
+</html>
